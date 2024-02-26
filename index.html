@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add file to Github</title>
+    <style>
+        @font-face {
+            font-family: 'my-awesome-font';
+            src: url('radiant.otf');
+        }
+        html
+        {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        *
+        {
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            letter-spacing: 1px;
+            font-family: 'my-awesome-font';
+        }
+        .container
+        {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('bg.jpg');
+            background-size: cover;
+        }
+        .container .animate-text h1
+        {
+            font-weight: 100;
+            font-size:5vw;
+            text-align: center;
+            color:greenyellow;
+            text-shadow: 1px 1px 0 black, 2px 2px 0 yellow, 3px 3px 0 crimson, 10px 10px 15px black;
+            letter-spacing: 2px;
+        }
+        .container .animate-text h1 span
+        {
+            background: linear-gradient(to right,crimson,purple,darkviolet,rgb(255, 255, 255));
+            text-shadow: 0 0 0 transparent;
+            color:transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animate-text">
+            <h1>Welcome to my Activities Like... <span></span></h1>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>    
+    var typeText = new Typed('.animate-text span',{
+    strings : ['Coding','Gaming','Studying','Sleeping','Eating'],
+    typeSpeed : 100,
+
+    loop :true
+    })
+
+// var type = new Typed('.targetelem',{
+//     strings: ['tasks','tasksTwo','tasksThree'],
+//     typeSpeed : 
+// })
+</script>
+</body>
+</html>
